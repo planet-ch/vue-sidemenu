@@ -1,10 +1,22 @@
 {
-  "name": "vue-sidemenu",
+  "name": "vue-sidemenu-com",
+  "description": "vue-sidemenu",
   "version": "0.1.0",
-  "private": true,
+  "author": "planet-ch",
+  "license": "MIT",
+  "private": false,
+  "main": "dist/vue-sidemenu.min.js",
+  "bugs": {
+    "url": "https://github.com/planet-ch/vue-sidemenu/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/planet-ch/vue-sidemenu.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name vue-sidemenu --dest lib packages/index.js"
   },
   "dependencies": {
     "core-js": "^3.6.5",
