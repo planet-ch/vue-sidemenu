@@ -7,20 +7,21 @@
 
 ## Install
 ``` bash
-npm  install vue-sidemenu --save
+npm  install vue-sidemenu-com --save
 ```
 
 ## Usage
 ``` js
 // register the plugin on vue
 
-import vue-sidemenu from 'vue-sidemenu'
+import vueSidemenu from 'vue-sidemenu-com'
 Vue.use(vueSidemenu)
+import 'vue-sidemenu-com/lib/vue-sidemenu.css';
 ```
 ### template
 ``` 
 <template>
-  <sideMenu :data="data">
+  <vue-sidemenu :data="data">
     <template slot="right-item-module" scope="props">
       <div class="content-box">
         <div class="module-title">
@@ -34,18 +35,25 @@ Vue.use(vueSidemenu)
         </div>
       </div>
     </template>
-  </sideMenu>
+  </vue-sidemenu>
 </template>
 ```
 
 ### js
 ``` js
-	import sideMenu from '@/components/sideMenu'
       export default {
         name: 'sideMenuDemo',
         data () {
           return {
             data: [
+             {
+                id: -1,
+                title: '所有英雄',
+                count: 0,
+                list: [
+                  
+                ]
+              },
               {
                 id: 1,
                 title: '法师',
@@ -72,9 +80,6 @@ Vue.use(vueSidemenu)
               }
             ]
           }
-        },
-        components: {
-          sideMenu
         },
         created () {
         },

@@ -1,11 +1,11 @@
 {
   "name": "vue-sidemenu-com",
   "description": "vue-sidemenu",
-  "version": "0.1.0",
+  "version": "0.1.7",
   "author": "planet-ch",
   "license": "MIT",
   "private": false,
-  "main": "dist/vue-sidemenu.min.js",
+  "main": "lib/vue-sidemenu.umd.js",
   "bugs": {
     "url": "https://github.com/planet-ch/vue-sidemenu/issues"
   },
